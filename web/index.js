@@ -22,7 +22,7 @@ function cookieSetup() {
             $.cookie("updated", data.updated);
             $.cookie("user", data.user);
         },
-        {method: "new-user", user: 1}
+        {method: "newUser", user: 1}
         );
     }
 }
@@ -33,7 +33,8 @@ function fireDrip(callback, params) {
     $.ajax({
         url: "drip.php",
         data: params,
-        dataType: "json"
+        dataType: "json",
+        method: "POST"
     }).success(function(data) {
         callback(data);
     }).error(function(error) {

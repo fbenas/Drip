@@ -8,7 +8,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Drip\\": "src/"
+            "Drip\\": "src/",
+            "DripWeb\\": "src/DripWeb"
         }
     },
     "minimum-stability": "stable"
