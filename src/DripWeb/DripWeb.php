@@ -2,6 +2,8 @@
 
 namespace DripWeb;
 
+use User;
+
 class DripWeb
 {
     protected $get;
@@ -39,13 +41,8 @@ class DripWeb
     protected function newUser()
     {
         http_response_code(200);
-        echo json_encode(
-            [
-                "created" => date('Y-m-d H:i:s'),
-                "updated"  => date('Y-m-d H:i:s'),
-                "user"    => uniqid()
-            ]
-        );
+        $user = new User();
+        echo $user->getJson();
     }
 
     protected function message()

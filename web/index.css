@@ -3,6 +3,7 @@ body {
 }
 .story {
     margin: 0 auto;
+    margin-top: 40px;
     width: 400px;
     height: 600px;
     padding: 10px;

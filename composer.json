@@ -9,7 +9,8 @@
     "autoload": {
         "psr-4": {
             "Drip\\": "src/",
-            "DripWeb\\": "src/DripWeb"
+            "DripWeb\\": "src/DripWeb",
+            "PhilDb\\": "src/PhilDb"
         }
     },
     "minimum-stability": "stable"
